@@ -74,5 +74,53 @@ export const swaggerDocument = {
         },
       },
     },
+    // batch 
+    // '/deidentify/batch': {
+    //   post: {
+    //     summary: 'Batch de-identify multiple text records in one request',
+    //     requestBody: {
+    //       required: true,
+    //       content: {
+    //         'application/json': {
+    //           schema: {
+    //             type: 'object',
+    //             required: ['records'],
+    //             properties: {
+    //               records: {
+    //                 type: 'array',
+    //                 items: { type: 'string' },
+    //                 example: [
+    //                   'Patient Name: Jane Doe | Email: jane@example.com',
+    //                   'Server IP: 192.168.1.10 | Phone: +91 98765 43210',
+    //                 ],
+    //               },
+    //               entities: {
+    //                 type: 'array',
+    //                 items: {
+    //                   type: 'string',
+    //                   enum: [
+    //                     'EMAIL',
+    //                     'PHONE',
+    //                     'SSN',
+    //                     'DATE_OF_BIRTH',
+    //                     'CREDIT_CARD',
+    //                     'IP_ADDRESS',
+    //                     'NAME',
+    //                   ],
+    //                 },
+    //                 example: ['NAME', 'EMAIL', 'IP_ADDRESS', 'PHONE'],
+    //               },
+    //             },
+    //           },
+    //         },
+    //       },
+    //     },
+    //     responses: {
+    //       200: { description: 'Successfully de-identified batch records' },
+    //       400: { description: 'Invalid batch payload or unsupported entity type' },
+    //     },
+    //   },
+    // },
+    // batch 
   },
 };
